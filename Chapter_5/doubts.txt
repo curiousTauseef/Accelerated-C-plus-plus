@@ -1,0 +1,2 @@
+In Student_info.cpp at line 8-9, what happens when we give end of line operator.
+Why does using double suffice instead of size_type in line 18 example.cpp 

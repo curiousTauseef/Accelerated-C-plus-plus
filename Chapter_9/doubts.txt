@@ -1,0 +1,4 @@
+When should we clear the input stream ? In the case of fish example it does not matter
+
+However in case of Students_info_class it matters.
+

@@ -1,0 +1,1 @@
+Was it necessary to have the size variable of type vector size? Since I try with double and it still works?
