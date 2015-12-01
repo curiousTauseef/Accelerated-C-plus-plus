@@ -4,6 +4,14 @@ using std::vector;
 using std::cout;
 using std::endl;
 
+
+// Defining constructors
+
+Student_info::Student_info():midterm(0), final(0){}
+Student_info::Student_info(istream& is){read(is);}
+
+
+// Defining other functions
 bool compare(const Student_info& x, const Student_info& y){
 return x.name() < y.name();
 }
@@ -11,7 +19,6 @@ return x.name() < y.name();
 double Student_info::grade() const{
     return ::grade(midterm, final, homework); // We should include the header file for grade here?
 }
-
 
 
 istream& Student_info::read_homework(istream& in){
@@ -29,8 +36,6 @@ if (in) {
 return in;
 
 }
-
-
 
 istream& Student_info::read(istream& is){
 // read and store the student's name and midterm and final exam grades

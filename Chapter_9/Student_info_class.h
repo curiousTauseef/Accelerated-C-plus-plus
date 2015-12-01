@@ -10,6 +10,9 @@
 
 class Student_info{
     public:
+        //Constructor
+        Student_info();
+        Student_info(std::istream&);
         double grade() const;
         std::string name() const {return n;}
         std::istream& read(std::istream&);

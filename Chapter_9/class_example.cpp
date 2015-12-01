@@ -14,13 +14,13 @@ int main()
 {
 
 vector<Student_info> students;
-Student_info first,second;
+Student_info record;
 string::size_type maxlen = 0;
 
 cout<< "Enter the name and grade of students" << endl;
-while(first.read(cin)){
-    maxlen = max(maxlen, first.name().size());
-    students.push_back(first);
+while(record.read(cin)){
+    maxlen = max(maxlen, record.name().size());
+    students.push_back(record);
 }
 
 // Sorting the records by alphabets
