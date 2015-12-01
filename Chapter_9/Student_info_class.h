@@ -11,11 +11,12 @@
 class Student_info{
     public:
         double grade() const;
+        std::string name() const {return n;}
         std::istream& read(std::istream&);
         std::istream& read_homework(std::istream& in);
-        std::string name;
 
     private: 
+        std::string n;
         double midterm, final;
         std::vector<double> homework;
 };

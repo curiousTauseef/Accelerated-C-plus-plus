@@ -5,7 +5,7 @@ using std::cout;
 using std::endl;
 
 bool compare(const Student_info& x, const Student_info& y){
-return x.name < y.name;
+return x.name() < y.name();
 }
 
 double Student_info::grade() const{
@@ -34,7 +34,7 @@ return in;
 
 istream& Student_info::read(istream& is){
 // read and store the student's name and midterm and final exam grades
-is >> name >> midterm >> final;
+is >> n >> midterm >> final;
 read_homework(is); // read and store all the student's homework grades
 
 return is;
