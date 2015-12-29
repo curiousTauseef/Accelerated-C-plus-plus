@@ -15,6 +15,9 @@ class Student_info{
         Student_info(std::istream&);
         double grade() const;
         std::string name() const {return n;}
+        std::string* name_ref()  {return &n;} // This line is to show how we could actually violate the private space
+        //std::string& name_ref()  {return n;} // This line is to show how we could actually violate the private space
+
         std::istream& read(std::istream&);
         std::istream& read_homework(std::istream& in);
 

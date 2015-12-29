@@ -1,1 +1,6 @@
 Was it necessary to have the size variable of type vector size? Since I try with double and it still works?
+
+When using vector<string>, accesing an element out of the range gives a segmentation fault and not a garbage 
+value.
+
+

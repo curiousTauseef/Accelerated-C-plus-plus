@@ -23,7 +23,8 @@ double grade_aux(const Student_info& s){
     try{ 
         return grade(s);
     }
-    catch (domain_error){
+    catch (domain_error){                     // It does not catch the domain error here, infact the exectution stops?
+        cout << "We are at the right place" << endl;
         return grade(s.midterm, s.final, 0);  // Homework is assigned as zero
     }
 }

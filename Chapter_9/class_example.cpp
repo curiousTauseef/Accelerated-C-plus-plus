@@ -21,6 +21,12 @@ cout<< "Enter the name and grade of students" << endl;
 while(record.read(cin)){
     maxlen = max(maxlen, record.name().size());
     students.push_back(record);
+    
+    // We will modfiy the name illegaly over here since we have the reference to the private part
+    cout << record.name_ref() << endl;
+    *record.name_ref() = "erased" ;
+    //record.name_ref() = "erased" ;
+    cout <<  record.name() << endl; 
 }
 
 // Sorting the records by alphabets

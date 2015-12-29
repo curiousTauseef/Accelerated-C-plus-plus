@@ -4,7 +4,7 @@ all:
 	g++ -Wall -o test_fish test_fish.cpp fish.cpp
 	
 class_example: class_example.o Student_info_class.o grade.o median.o 
-	g++ -Wall -o class_example class_example.o Student_info_class.o grade.o median.o
+	g++ -Wall -o class_example class_example.o Student_info_class.o grade.o median.o 
 
 fish: test_fish.o fish.o
 	g++ -Wall -o test_fish test_fish.o fish.o
