@@ -10,9 +10,9 @@ cout << "Enter a value in the system" << endl;
 cin >> x;
 
 *p = 10;
-cout << "The replace value is " << x << endl;
+cout << "The replaced value is " << x << endl;
 
 cout << "The address of x is " << &x << endl;
-cout << "The value of p is " << p << endl;
+cout << "The value of p is " << *p << endl;
 
 }
