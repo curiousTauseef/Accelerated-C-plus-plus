@@ -1,0 +1,5 @@
+In analysis.cpp the size of homework vector could be 0 if not all homework is done?
+It would cause an error. 
+
+Somehow the domain_error is not caught? when we pass a zero vector for homework at 
+line 26 in analsis.cpp 
