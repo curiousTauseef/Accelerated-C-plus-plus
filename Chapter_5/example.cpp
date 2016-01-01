@@ -20,6 +20,7 @@ cout<< "Number of names read so far: "<< number_elements << endl;
 
 // Printing these names ( This is the traditional way )
 for (vector<Student_info>::size_type i =0; i != number_elements; i++){
+//cout<< &students[i] <<endl;
 cout<< students[i].name <<endl;
 }
 
@@ -27,7 +28,7 @@ cout<< students[i].name <<endl;
 // Printing these names ( This is using iterators )
 cout<<"\nPrinting using iterators" << endl;
 for (vector<Student_info>::const_iterator iter = students.begin(); iter != students.end(); iter++){
-//cout<< (*iter).name <<endl;
+//cout<< &(*iter) <<endl;
 cout<< iter->name <<endl;
 }
 

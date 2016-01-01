@@ -1,0 +1,6 @@
+We can not call the function thesis_score in main, if it is not shared by the base 
+class as well?
+
+Also, after reading the Ch in the while, can't I use another while to pipe the
+input from cin like in the previous case
+while(record->read(cin))                           

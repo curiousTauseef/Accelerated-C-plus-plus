@@ -13,6 +13,7 @@ class Student_info{
         //Constructor
         Student_info();
         Student_info(std::istream&);
+        
         double grade() const;
         std::string name() const {return n;}
         std::string* name_ref()  {return &n;} // This line is to show how we could actually violate the private space

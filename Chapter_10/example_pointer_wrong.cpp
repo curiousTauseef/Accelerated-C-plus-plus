@@ -24,8 +24,8 @@ cout << "The value at the location is " << *b << endl;
 int *c = correct_way(); 
 cout << "The value at the location is " << *c << endl;
 
-*c = *c + 1;
-cout << "The value at the location is " << *c << endl;
+++*c;
+cout << "The value at the location after increment is " << *c << endl;
 cout << "The value at the next call " << *(correct_way()) << endl;
 
 return 0;
